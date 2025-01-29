@@ -1,6 +1,15 @@
 # datafun-03-analytics
 No idea what is happening with this project but make sure to activate the .venv and deactivate when done
 
+The brief instructions:
+1. Create Github repo on Github browser
+2. Use VS code GUI top clone repo to machine
+3. Create .venv (Instructions below)
+4. Update requests and pip install
+5. create requirements.txt and whatever else
+6. commit with changes to Github
+
+
 Using venv in Visual Studio Code
 1
 2
