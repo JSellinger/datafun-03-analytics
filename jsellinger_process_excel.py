@@ -46,7 +46,7 @@ def process_excel_file():
     input_file = pathlib.Path(fetched_folder_name, "inflation.xls")
     output_file = pathlib.Path(processed_folder_name, "excel_inflation.txt")
     column_to_check = "A"  # Replace with the appropriate column letter
-    word_to_count = "GitHub"
+    word_to_count = "1985"
     word_count = count_word_in_column(input_file, column_to_check, word_to_count)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with output_file.open('w') as file:
