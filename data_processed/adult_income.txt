@@ -1,1 +1,1 @@
-Occurrences of '21' in column A: 0
+Occurrences of 'Doctorate' in column D: 413
