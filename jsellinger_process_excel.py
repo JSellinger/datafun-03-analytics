@@ -20,8 +20,8 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
+fetched_folder_name: str = "data"
+processed_folder_name: str = "data_processed"
 
 #####################################
 # Define Functions
@@ -43,8 +43,8 @@ def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str)
 
 def process_excel_file():
     """Read an Excel file, count occurrences of 'GitHub' in a specific column, and save the result."""
-    input_file = pathlib.Path(fetched_folder_name, "feedback.xlsx")
-    output_file = pathlib.Path(processed_folder_name, "excel_feedback_github_count.txt")
+    input_file = pathlib.Path(fetched_folder_name, "inflation.xls")
+    output_file = pathlib.Path(processed_folder_name, "excel_inflation.txt")
     column_to_check = "A"  # Replace with the appropriate column letter
     word_to_count = "GitHub"
     word_count = count_word_in_column(input_file, column_to_check, word_to_count)

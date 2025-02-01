@@ -35,15 +35,15 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
+fetched_folder_name: str = "data"
+processed_folder_name: str = "data_processed"
 
 #####################################
 # Define Functions
 #####################################
 
 def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
-    """Count the number of astronauts on each spacecraft from a JSON file."""
+    """Retrieve iss position from a JSON file."""
     try:
         with file_path.open('r') as file:
             # Use the json module load() function 
@@ -62,15 +62,15 @@ def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
         return {}
 
 def process_json_file():
-    """Read a JSON file, count astronauts by spacecraft, and save the result."""
-    input_file: pathlib.Path = pathlib.Path(fetched_folder_name, "astros.json")
-    output_file: pathlib.Path = pathlib.Path(processed_folder_name, "json_astronauts_by_craft.txt")
+    """Read a JSON file, take iss position, and save the result."""
+    input_file: pathlib.Path = pathlib.Path(fetched_folder_name, "iss-now.json")
+    output_file: pathlib.Path = pathlib.Path(processed_folder_name, "json_iss_position.txt")
     
     craft_counts = count_astronauts_by_craft(input_file)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     
     with output_file.open('w') as file:
-        file.write("Astronauts by spacecraft:\n")
+        file.write("json_iss_position:\n")
         for craft, count in craft_counts.items():
             file.write(f"{craft}: {count}\n")
     
