@@ -52,9 +52,9 @@ def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
             # initialize an empty dictionary to store the counts
             craft_counts_dictionary = {}
             # people is a list of dictionaries in the JSON file
-            people_list: list = astronaut_dictionary.get("people", [])
+            people_list: list = astronaut_dictionary.get("iss_position", [])
             for person_dictionary in people_list:  
-                craft = person_dictionary.get("craft", "Unknown")
+                craft = person_dictionary.get("latitude", "longitude")
                 craft_counts_dictionary[craft] = craft_counts_dictionary.get(craft, 0) + 1
             return craft_counts_dictionary
     except Exception as e:
