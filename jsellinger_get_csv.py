@@ -89,7 +89,7 @@ def main():
     """
     Main function to demonstrate fetching CSV data.
     """
-    csv_url = 'https://github.com/plotly/datasets/blob/master/diabetes.csv'
+    csv_url = 'https://raw.githubusercontent.com/plotly/datasets/refs/heads/master/diabetes.csv'
     logger.info("Starting CSV fetch demonstration...")
     fetch_csv_file(fetched_folder_name, "diabetes.csv", csv_url)
 

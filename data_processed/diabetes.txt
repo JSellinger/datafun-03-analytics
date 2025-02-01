@@ -1,1 +1,5 @@
 Ladder Score Statistics:
+Minimum: 0.00
+Maximum: 122.00
+Mean: 69.11
+Standard Deviation: 19.36

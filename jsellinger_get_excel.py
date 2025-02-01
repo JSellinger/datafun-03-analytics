@@ -89,7 +89,7 @@ def main():
     """
     Main function to demonstrate fetching Excel data.
     """
-    excel_url = 'https://github.com/rohanmistry231/Practice-Datasets-for-Excel/blob/main/Adult%20Census%20Income/adult.xlsx'
+    excel_url = 'https://github.com/rohanmistry231/Practice-Datasets-for-Excel/raw/refs/heads/main/Adult%20Census%20Income/adult.xlsx'
     logger.info("Starting Excel fetch demonstration...")
     fetch_excel_file(fetched_folder_name, "adult.xlsx", excel_url)
 
