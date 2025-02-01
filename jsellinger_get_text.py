@@ -89,7 +89,7 @@ def main():
     """
     Main function to demonstrate fetching text data.
     """
-    txt_url = 'https://github.com/Phylliida/Dialogue-Datasets/blob/master/MovieCorpus.txt'
+    txt_url = 'https://github.com/Phylliida/Dialogue-Datasets/raw/refs/heads/master/MovieCorpus.txt'
     logger.info("Starting text fetch demonstration...")
     fetch_txt_file(fetched_folder_name, "MovieCorpus.txt", txt_url)
 
