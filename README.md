@@ -65,3 +65,22 @@ deactivate
 This will revert your terminal to the global Python environment
 2
 .
+
+
+jsellinger_get_csv.py - This function retrieves a csv file from the specified URL
+jsellinger_get_excel.py - This function retrieves a csv file from the specified URL
+jsellinger_get_json.py - This function retrieves a csv file from the specified URL
+jsellinger_get_txt.py - This function retrieves a csv file from the specified URL
+
+jsellinger_process_csv.py - This function extracts blood pressure statistics
+jsellinger_process_excel.py - This function counts the number of adults with a doctorate degree
+jsellinger_process_json.py - This uses the NASA iss space station api to get it's current latitude and longitude
+jsellinger_process_txt.py - This counts the number of time sthe word "the" appears in a movie script
+
+Commands to run the scripts:
+
+I simply activated the virtual environment and then used the following command:
+
+python script.py 
+
+This runs the py script fopr whatever you are running.
