@@ -291,3 +291,7 @@
 2025-01-31 21:06:30.499 | INFO     | __main__:<module>:52 - Starting text processing...
 2025-01-31 21:06:30.594 | INFO     | __main__:process_text_file:45 - Processed text file: data\MovieCorpus.txt, Word count saved to: data_processed\MovieCorpus.txt
 2025-01-31 21:06:30.595 | INFO     | __main__:<module>:54 - Text processing complete.
+2025-01-31 21:28:15.800 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-01-31 21:28:15.801 | INFO     | __main__:<module>:52 - Starting text processing...
+2025-01-31 21:28:15.905 | INFO     | __main__:process_text_file:45 - Processed text file: data\MovieCorpus.txt, Word count saved to: data_processed\MovieCorpus.txt
+2025-01-31 21:28:15.906 | INFO     | __main__:<module>:54 - Text processing complete.
